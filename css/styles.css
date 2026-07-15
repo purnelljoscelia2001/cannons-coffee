@@ -49,7 +49,8 @@ h1 {
   text-transform: var(--texttrans);
   font-weight: var(--fontweight);
   margin: 0;
-
+  color: var(--white);
+  display: inline;
 }
 
 h2 {
@@ -78,3 +79,56 @@ h3 {
   text-transform: var(--texttrans);
   border-radius: var(--radius);
 }
+
+li a {
+  text-decoration: none;
+  text-transform: var(--texttrans);
+  color: var(--white);
+}
+
+ul li {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  align-items: baseline;
+}
+
+@media (min-width: 650px) {
+  header {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1000px) {
+    nav ul {
+      justify-content: space-between;
+    }
+    header {
+      justify-content: space-between;
+      align-items: baseline;
+    }
+}
+
