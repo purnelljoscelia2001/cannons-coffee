@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -7,9 +9,72 @@ html {
   box-sizing: inherit;
 }
 
+
+
+:root {
+  --black: #000000;
+  --darkblue: #06327d;
+  --blue: #2b70e4;
+  --green: #209d5c;
+  --yellow: #ffd034;
+  --white: #ffffff;
+  --lightblue: #cadbf8;
+  --lineheight: 1.1667;
+  --fontweight: 300;
+  --texttrans: uppercase;
+  --radius: 10px;
+  --font: "Montserrat" , serif ;
+}
+
 body {
   color: black;
   background-color: #063270;
   margin: 0;
   padding: 0;
+  font-size: 1.125rem;
+  line-height: 1.5;
+   font-family: var(--font);
+ 
+}
+
+.container {
+  max-width: 1200px;
+  padding: 1rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: var(--lineheight);
+  text-transform: var(--texttrans);
+  font-weight: var(--fontweight);
+  margin: 0;
+
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: var(--lineheight);
+  font-weight: var(--fontweight);
+  text-transform: var(--texttrans);
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: var(--lineheight);
+  font-weight: var(--fontweight);
+}
+
+.greenbutton {
+  text-transform: var(--texttrans);
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: var(--radius);
+}
+
+.bluebutton {
+  background-color: var(--darkblue);
+  color: var(--white);
+  text-transform: var(--texttrans);
+  border-radius: var(--radius);
 }
