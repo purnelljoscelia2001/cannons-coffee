@@ -71,6 +71,9 @@ h3 {
   background-color: var(--green);
   color: var(--white);
   border-radius: var(--radius);
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem;
 }
 
 .bluebutton {
@@ -116,9 +119,39 @@ header {
   align-items: baseline;
 }
 
+img {
+  max-width: 100%;
+}
+
+.imgtext {
+  padding-bottom: 1rem;
+}
+
+
+.imgtext, .imgcard {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0;
+}
+
+.grid1 {
+  margin-top: 2rem;
+  border-top: solid var(--yellow) 5px;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--white);
+}
+
 @media (min-width: 650px) {
   header {
     justify-content: center;
+  }
+  .grid1 {
+    align-content: center;
   }
 }
 
