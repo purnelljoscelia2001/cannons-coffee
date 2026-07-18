@@ -196,6 +196,16 @@ footer {
     max-width: 1200px;
   }
 
+  .latte-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    border-top: solid var(--yellow) 5px;
+    background-color: var(--white);
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
 
 
 @media (min-width: 650px) {
