@@ -221,19 +221,12 @@ footer {
   .box1 {
     grid-column: 1/2;
   }
+ 
 
   
 }
 
-/* @media (min-width: 816px) {
-  footer p {
-      flex-flow: row wrap;
-      justify-content: center;
-      display: inline-block;
-      
-  
-    }
-}   */
+
 
 @media (min-width: 1000px) {
     nav ul {
